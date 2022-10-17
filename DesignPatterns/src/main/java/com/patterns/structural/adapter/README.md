@@ -6,7 +6,7 @@ Also known as **Wrapper**
 You are creating an app it downloads stock data from multiple sources in XML format and then displays nice-looking charts 
 and diagrams for the user. At some point you decide to improve the app by integrating a smart 3rd-party analytics library. 
 But there's a catch: the analytics library only works with data in JSON format.
-![](/img/adapter/adapter1.png)
+![](../../../../../resources/img/adapter/adapter1.png)
 
 You could change the library to work with XML but it might break some existing code that relies on the library. 
 And worse, you might not have access to the library source code, making the task kind of impossible.
@@ -25,17 +25,17 @@ Adapters not only can convert data into various formats but can also help object
 3. Upon receiving a call, the adapter passes the request to the second object, but in a format and order that the second object expects.
 
 Sometimes is possible to create a two-way adapter that convert the calls in both directions.
-![](/img/adapter/adapter2.png)
+![](../../../../../resources/img/adapter/adapter2.png)
 
 ## Analogy
-![](/img/adapter/adapter3.png)
+![](../../../../../resources/img/adapter/adapter3.png)
 When you travel from the US to Europe for the first time, you may get a surprise when trying to charge your laptop. 
 The power plug and sockets standards are different in different countries. That’s why your US plug won’t fit a German socket. 
 The problem can be solved by using a power plug adapter that has the American-style socket and the European-style plug.
 
 ## Structure
 The implementation uses the object composition principle: the adapter implements the interface of one object and wraps the other one.
-![](/img/adapter/adapter4.png)
+![](../../../../../resources/img/adapter/adapter4.png)
 
 1. The **Client** is a class that contains the existing business logic of the program.
 2. The **Client Interface** describes a protocol that other classes must follow to be able to collaborate with the client code.
@@ -51,7 +51,7 @@ class without changing the client code.
 
 ## Pseudocode
 The **Adapter** pattern is based on the classic conflict between square pegs and round holes.
-![](/img/adapter/adapter5.png)
+![](../../../../../resources/img/adapter/adapter5.png)
 
 The **Adapter** pretends to be a round peg, with a radius equal to a half of the square's diameter.
 

@@ -10,7 +10,7 @@ to the original object, allowing you to perform something either before or after
 Why would you want to control access to an object? 
 
 You have a massive object that consumes a vast amount of system resources. You need it from time to time but not always.
-![](/img/proxy/proxy1.png)
+![](../../../../../resources/img/proxy/proxy1.png)
 
 You could implement lazy initialization: create the object only when it's needed. All of object's clients would need 
 execute some deferred initialization code. Unfortunately this cloud cause a lot of duplicated code.
@@ -24,7 +24,7 @@ The proxy pattern suggest that you create a new proxy class with the same interf
 Then your update the app, so it passes the proxy object to all the original object's clients. 
 Upon receiving a request from a client, the proxy creates a real service object and delegates all the work to it.
 
-![](/img/proxy/proxy2.png)
+![](../../../../../resources/img/proxy/proxy2.png)
 
 If you need to execute something either before or after the primary logic of the class, 
 the proxy lets you do this without changing the class. Since the proxy implements the same interface as the original class, 
@@ -32,13 +32,13 @@ it can be passed to any client that expects a real service object.
 
 ## Analogy
 
-![](/img/proxy/proxy3.png)
+![](../../../../../resources/img/proxy/proxy3.png)
 
 A credit card is a proxy for a bank account, which is a proxy for a bundle of cash. Both implements the same interface: 
 they can be used for making a payment. 
 
 ## Structure
-![](/img/proxy/proxy4.png)
+![](../../../../../resources/img/proxy/proxy4.png)
 
 1. The service interface declares the interface of the **Service**. The proxy must follow this interface to be able to disguise 
 itself as a service object.
@@ -50,7 +50,7 @@ Usually, proxies manage the full lifecycle of their service objects.
 code that expects a service object.
 
 ## Pseudocode
-![](/img/proxy/proxy5.png)
+![](../../../../../resources/img/proxy/proxy5.png)
 Originally if the application requests the same video multiple times, the library just download it over and over, 
 instead of caching and reusing.
 
