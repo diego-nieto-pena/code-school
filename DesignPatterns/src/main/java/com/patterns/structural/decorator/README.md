@@ -77,7 +77,7 @@ the base decorator, and executes their behavior either before or after calling t
 
 The **Decorator** pattern lets compress and encrypt sensitive data independently of the code that actually uses this data.
 
-![](../../../../../resources/img/decorator/decorator7.png)
+![](../../../../../resources/img/decorator/decorator8.png)
 
 - Just before the data is written to the disk the decorators encrypt and compress it.The original class writes the encrypted
 and protected data to the file without knowing about the change.
