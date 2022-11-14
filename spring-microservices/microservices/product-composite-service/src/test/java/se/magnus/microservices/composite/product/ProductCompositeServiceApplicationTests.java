@@ -1,11 +1,5 @@
 package se.magnus.microservices.composite.product;
 
-import static java.util.Collections.singletonList;
-import static org.mockito.Mockito.when;
-import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
-import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
-import static org.springframework.http.MediaType.APPLICATION_JSON;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +13,12 @@ import se.magnus.microservices.api.exceptions.InvalidInputException;
 import se.magnus.microservices.api.exceptions.NotFoundException;
 import se.magnus.microservices.composite.product.services.ProductCompositeIntegration;
 
+import static java.util.Collections.singletonList;
+import static org.mockito.Mockito.when;
+import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
+import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
+import static org.springframework.http.MediaType.APPLICATION_JSON;
+
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 class ProductCompositeServiceApplicationTests {
 
@@ -26,9 +26,11 @@ class ProductCompositeServiceApplicationTests {
   private static final int PRODUCT_ID_NOT_FOUND = 2;
   private static final int PRODUCT_ID_INVALID = 3;
 
-  @Autowired private WebTestClient client;
+  @Autowired
+  private WebTestClient client;
 
-  @MockBean private ProductCompositeIntegration compositeIntegration;
+  @MockBean
+  private ProductCompositeIntegration compositeIntegration;
 
   @BeforeEach
   void setUp() {
