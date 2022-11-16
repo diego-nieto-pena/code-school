@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b83f9059-0bc4-425f-b221-8828edc8c14d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/ApiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/composite/product/ProductAggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/composite/product/ProductCompositeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/composite/product/RecommendationSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/composite/product/ReviewSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/composite/product/ServiceAddresses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/core/product/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/core/product/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/core/recommendation/Recommendation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/core/recommendation/RecommendationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/core/review/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/core/review/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/exceptions/InvalidInputException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/exceptions/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/se/magnus/microservices/api/ApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/src/main/java/se/magnus/microservices/composite/product/ProductCompositeServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/src/main/java/se/magnus/microservices/composite/product/services/ProductCompositeIntegration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/src/main/java/se/magnus/microservices/composite/product/services/ProductCompositeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-composite-service/src/test/java/se/magnus/microservices/composite/product/ProductCompositeServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/src/main/java/se/magnus/microservices/core/product/ProductServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/src/main/java/se/magnus/microservices/core/product/services/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/product-service/src/test/java/se/magnus/microservices/core/product/ProductServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/src/main/java/se/magnus/microservices/core/recommendation/RecommendationServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/src/main/java/se/magnus/microservices/core/recommendation/services/RecommendationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/recommendation-service/src/test/java/se/magnus/microservices/core/recommendation/RecommendationServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/src/main/java/se/magnus/microservices/core/review/ReviewServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/src/main/java/se/magnus/microservices/core/review/services/ReviewServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/review-service/src/test/java/se/magnus/microservices/core/review/ReviewServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-them-all.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/se/magnus/microservices/util/http/GlobalControllerExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/se/magnus/microservices/util/http/HttpErrorInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/java/se/magnus/microservices/util/http/ServiceUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/src/main/resources/application.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/util">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/microservices/product-composite-service">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+                <item name="product-composite-service" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+                <item name="product-composite-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-microservices" type="f1a62948:ProjectNode" />
+                <item name="microservices" type="2d1252cf:ModuleNode" />
+                <item name="product-composite-service" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2GdFS2W8eBmq5pgn0OXzfswWdaE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservices/product-composite-service" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/microservices/product-composite-service" />
+      <recent name="$PROJECT_DIR$/microservices/review-service" />
+      <recent name="$PROJECT_DIR$/microservices/recommendation-service" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.spring-microservices [build]">
+    <configuration name="ProductCompositeServiceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":microservices:product-composite-service:test" />
+            <option value="--tests" />
+            <option value="&quot;se.magnus.microservices.composite.product.ProductCompositeServiceApplicationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductCompositeServiceApplicationTests.getProductById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":microservices:product-composite-service:test" />
+            <option value="--tests" />
+            <option value="&quot;se.magnus.microservices.composite.product.ProductCompositeServiceApplicationTests.getProductById&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductServiceApplicationTests.getProductInvalidParameterString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":microservices:product-service:test" />
+            <option value="--tests" />
+            <option value="&quot;se.magnus.microservices.core.product.ProductServiceApplicationTests.getProductInvalidParameterString&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-microservices [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-microservices:microservices:product-composite-service [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservices/product-composite-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservices.api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.api.ApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-microservices.api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.api.ApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroServicesCompositeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservices.micro-services-composite.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.microservices.composite.MicroServicesCompositeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroServicesProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservices.micro-services-product.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.microservices.product.MicroServicesProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroServicesRecommendationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservices.micro-services-recommendation.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.microservices.recomendation.MicroServicesRecommendationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroServicesReviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservices.micro-services-review.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.microservices.review.MicroServicesReviewApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductCompositeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-microservices.microservices.product-composite-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.composite.product.ProductCompositeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-microservices.microservices.product-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.core.product.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecommendationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-microservices.microservices.recommendation-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.core.recommendation.RecommendationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-microservices.microservices.review-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="se.magnus.microservices.core.review.ReviewServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.spring-microservices [build]" />
+        <item itemvalue="Gradle.ProductCompositeServiceApplicationTests.getProductById" />
+        <item itemvalue="Gradle.spring-microservices:microservices:product-composite-service [build]" />
+        <item itemvalue="Gradle.ProductCompositeServiceApplicationTests" />
+        <item itemvalue="Gradle.ProductServiceApplicationTests.getProductInvalidParameterString" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b83f9059-0bc4-425f-b221-8828edc8c14d" name="Changes" comment="" />
+      <created>1666710549961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666710549961</updated>
+      <workItem from="1666710551241" duration="1624000" />
+      <workItem from="1667230145096" duration="4435000" />
+      <workItem from="1667500208164" duration="944000" />
+      <workItem from="1667503043369" duration="667000" />
+      <workItem from="1667923740659" duration="6502000" />
+      <workItem from="1668007646816" duration="7095000" />
+      <workItem from="1668076145141" duration="15287000" />
+      <workItem from="1668441004419" duration="8765000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api/src/main/java/se/magnus/microservices/api/ApiApplication.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
