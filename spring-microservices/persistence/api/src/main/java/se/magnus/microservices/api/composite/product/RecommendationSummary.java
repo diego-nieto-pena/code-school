@@ -1,26 +1,16 @@
 package se.magnus.microservices.api.composite.product;
 
+import lombok.*;
+
+@Data
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class RecommendationSummary {
 
-  private final int recommendationId;
-  private final String author;
-  private final int rate;
+  private int recommendationId;
+  private String author;
+  private int rate;
+  private String content;
 
-  public RecommendationSummary(int recommendationId, String author, int rate) {
-    this.recommendationId = recommendationId;
-    this.author = author;
-    this.rate = rate;
-  }
-
-  public int getRecommendationId() {
-    return recommendationId;
-  }
-
-  public String getAuthor() {
-    return author;
-  }
-
-  public int getRate() {
-    return rate;
-  }
 }

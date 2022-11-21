@@ -1,13 +1,15 @@
 package se.magnus.microservices.api.composite.product;
 
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 @Data
-@RequiredArgsConstructor
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ReviewSummary {
 
-  private final int reviewId;
-  private final String author;
-  private final String subject;
+  private int reviewId;
+  private String author;
+  private String subject;
+  private String content;
 }
