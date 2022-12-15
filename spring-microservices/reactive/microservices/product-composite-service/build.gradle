@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.5.2'
+    id 'org.springframework.boot' version '2.5.6'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
@@ -7,17 +7,15 @@ plugins {
 group = 'se.magnus.microservices.composite.product'
 version = '1.0.0-SNAPSHOT'
 sourceCompatibility = '11'
-
+ext {
+    springCloudVersion = "2020.0.3"
+}
 repositories {
     mavenCentral()
 }
 
 jar {
     enabled = false
-}
-
-ext {
-    springCloudVersion = "2020.0.3"
 }
 
 dependencies {
@@ -28,13 +26,12 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
     implementation 'org.springframework.cloud:spring-cloud-starter-stream-kafka'
     implementation 'org.springdoc:springdoc-openapi-webflux-ui:1.5.9'
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.cloud:spring-cloud-stream::test-binder'
     testImplementation 'io.projectreactor:reactor-test'
 
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
-
     testCompileOnly 'org.projectlombok:lombok:1.18.24'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
@@ -43,6 +40,7 @@ dependencyManagement {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
     }
 }
+
 test {
     useJUnitPlatform()
 }

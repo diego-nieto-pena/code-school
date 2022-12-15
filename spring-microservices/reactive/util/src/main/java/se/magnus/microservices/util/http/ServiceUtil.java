@@ -24,7 +24,7 @@ public class ServiceUtil {
 
   public String getServiceAddress() {
     if (serviceAddress == null) {
-      serviceAddress = findMyHostname() + "/" + findMyIpAddress() + ":" + port;
+      serviceAddress = "localhost:123456"; //findMyHostname() + "/" + findMyIpAddress() + ":" + port;
     }
     return serviceAddress;
   }

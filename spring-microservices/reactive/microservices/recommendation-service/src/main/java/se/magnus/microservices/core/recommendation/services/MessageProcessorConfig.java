@@ -1,7 +1,7 @@
 package se.magnus.microservices.core.recommendation.services;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import se.magnus.microservices.api.core.recommendation.Recommendation;
@@ -13,10 +13,14 @@ import java.util.function.Consumer;
 
 @Slf4j
 @Configuration
-@RequiredArgsConstructor
 public class MessageProcessorConfig {
 
   private final RecommendationService recommendationService;
+
+  @Autowired
+  public MessageProcessorConfig(RecommendationService recommendationService) {
+    this.recommendationService = recommendationService;
+  }
 
   @Bean
   public Consumer<Event<Integer, Recommendation>> messageProcessor() {
