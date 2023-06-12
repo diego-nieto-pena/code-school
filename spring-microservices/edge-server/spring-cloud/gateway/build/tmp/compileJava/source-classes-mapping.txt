@@ -1,0 +1,4 @@
+se/magnus/springcloud/gateway/GatewayApplication.java
+ se.magnus.springcloud.gateway.GatewayApplication
+se/magnus/springcloud/gateway/HealthCheckConfiguration.java
+ se.magnus.springcloud.gateway.HealthCheckConfiguration

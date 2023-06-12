@@ -1,0 +1,13 @@
+se/magnus/microservices/core/product/services/ProductServiceImpl.java
+ se.magnus.microservices.core.product.services.ProductServiceImpl
+se/magnus/microservices/core/product/services/MessageProcessorConfig.java
+ se.magnus.microservices.core.product.services.MessageProcessorConfig
+ se.magnus.microservices.core.product.services.MessageProcessorConfig$1
+se/magnus/microservices/core/product/persistence/ProductEntity.java
+ se.magnus.microservices.core.product.persistence.ProductEntity
+se/magnus/microservices/core/product/ProductServiceApplication.java
+ se.magnus.microservices.core.product.ProductServiceApplication
+se/magnus/microservices/core/product/persistence/ProductRepository.java
+ se.magnus.microservices.core.product.persistence.ProductRepository
+se/magnus/microservices/core/product/services/ProductMapper.java
+ se.magnus.microservices.core.product.services.ProductMapper

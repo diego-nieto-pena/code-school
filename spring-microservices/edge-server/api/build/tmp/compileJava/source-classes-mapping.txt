@@ -1,0 +1,33 @@
+se/magnus/api/core/recommendation/Recommendation.java
+ se.magnus.api.core.recommendation.Recommendation
+se/magnus/api/composite/product/RecommendationSummary.java
+ se.magnus.api.composite.product.RecommendationSummary
+se/magnus/api/exceptions/NotFoundException.java
+ se.magnus.api.exceptions.NotFoundException
+se/magnus/api/composite/product/ProductCompositeService.java
+ se.magnus.api.composite.product.ProductCompositeService
+se/magnus/api/composite/product/ReviewSummary.java
+ se.magnus.api.composite.product.ReviewSummary
+se/magnus/api/composite/product/ProductAggregate.java
+ se.magnus.api.composite.product.ProductAggregate
+se/magnus/api/core/review/Review.java
+ se.magnus.api.core.review.Review
+se/magnus/api/exceptions/InvalidInputException.java
+ se.magnus.api.exceptions.InvalidInputException
+se/magnus/api/core/recommendation/RecommendationService.java
+ se.magnus.api.core.recommendation.RecommendationService
+se/magnus/api/core/review/ReviewService.java
+ se.magnus.api.core.review.ReviewService
+se/magnus/api/composite/product/ServiceAddresses.java
+ se.magnus.api.composite.product.ServiceAddresses
+se/magnus/api/exceptions/EventProcessingException.java
+ se.magnus.api.exceptions.EventProcessingException
+se/magnus/api/event/Event.java
+ se.magnus.api.event.Event
+ se.magnus.api.event.Event$Type
+se/magnus/api/exceptions/BadRequestException.java
+ se.magnus.api.exceptions.BadRequestException
+se/magnus/api/core/product/Product.java
+ se.magnus.api.core.product.Product
+se/magnus/api/core/product/ProductService.java
+ se.magnus.api.core.product.ProductService

@@ -1,0 +1,6 @@
+se/magnus/util/http/ServiceUtil.java
+ se.magnus.util.http.ServiceUtil
+se/magnus/util/http/HttpErrorInfo.java
+ se.magnus.util.http.HttpErrorInfo
+se/magnus/util/http/GlobalControllerExceptionHandler.java
+ se.magnus.util.http.GlobalControllerExceptionHandler

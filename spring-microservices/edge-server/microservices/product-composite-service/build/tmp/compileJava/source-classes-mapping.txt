@@ -1,0 +1,7 @@
+se/magnus/microservices/composite/product/services/ProductCompositeServiceImpl.java
+ se.magnus.microservices.composite.product.services.ProductCompositeServiceImpl
+se/magnus/microservices/composite/product/services/ProductCompositeIntegration.java
+ se.magnus.microservices.composite.product.services.ProductCompositeIntegration
+ se.magnus.microservices.composite.product.services.ProductCompositeIntegration$1
+se/magnus/microservices/composite/product/ProductCompositeServiceApplication.java
+ se.magnus.microservices.composite.product.ProductCompositeServiceApplication

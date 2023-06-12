@@ -1,0 +1,13 @@
+se/magnus/microservices/core/recommendation/RecommendationServiceApplication.java
+ se.magnus.microservices.core.recommendation.RecommendationServiceApplication
+se/magnus/microservices/core/recommendation/services/RecommendationMapper.java
+ se.magnus.microservices.core.recommendation.services.RecommendationMapper
+se/magnus/microservices/core/recommendation/persistence/RecommendationRepository.java
+ se.magnus.microservices.core.recommendation.persistence.RecommendationRepository
+se/magnus/microservices/core/recommendation/services/RecommendationServiceImpl.java
+ se.magnus.microservices.core.recommendation.services.RecommendationServiceImpl
+se/magnus/microservices/core/recommendation/services/MessageProcessorConfig.java
+ se.magnus.microservices.core.recommendation.services.MessageProcessorConfig
+ se.magnus.microservices.core.recommendation.services.MessageProcessorConfig$1
+se/magnus/microservices/core/recommendation/persistence/RecommendationEntity.java
+ se.magnus.microservices.core.recommendation.persistence.RecommendationEntity

@@ -3,9 +3,9 @@ package com.patterns.creational.prototype;
 import java.util.Objects;
 
 public abstract class Shape {
-    public int x;
-    public int y;
-    public String color;
+    int x;
+    int y;
+    String color;
 
     public Shape() {}
 

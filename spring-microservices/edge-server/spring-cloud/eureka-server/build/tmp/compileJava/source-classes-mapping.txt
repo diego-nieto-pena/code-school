@@ -1,0 +1,2 @@
+se/magnus/springcloud/eurekaserver/EurekaServerApplication.java
+ se.magnus.springcloud.eurekaserver.EurekaServerApplication

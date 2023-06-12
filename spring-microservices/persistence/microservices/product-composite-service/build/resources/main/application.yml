@@ -1,0 +1,109 @@
+server.port: 7000
+server.error.include-message: always
+
+springdoc:
+  swagger-ui:
+    path: /openapi/swagger-ui.html
+    api-docs.path: /openapi/v3/api-docs
+    packagesToScan: se.magnus.microservices.composite.product
+    pathsToMatch: /**
+
+api:
+  common:
+    version: 1.0.0
+    title: Product Composite API
+    description: Microservices with Spring Boot
+    termsOfService: Terms of Service
+    license: Open License
+    licenseUrl: www.nolicense.com
+
+    externalDocDesc: Wiki Page
+    externalDocUrl: www.wiki.com
+    contact:
+      name: Diego Nieto
+      url: www.diegonp.com
+      email: dhyego.nieto@gmail.com
+
+  responseCodes:
+    ok: OK
+    badRequest: Bad Request, invalid format of the request. See response message for more information
+    notFound: Not found, the specified id does not exist
+    unprocessableEntity: Unprocessable entity, input parameters caused the processing to fail. See response message for more information
+
+  product-composite:
+    get-composite-product:
+      summary: Returns a composite view of the specified product id
+      description: |
+        # Normal response
+        If the requested product id is found the method will return information regarding:
+        1. Base product information
+        1. Reviews
+        1. Recommendations
+        1. Service Addresses\n(technical information regarding the addresses of the microservices that created the response)
+        
+        # Expected partial and error responses
+        In the following cases, only a partial response be created (used to simplify testing of error conditions)
+        
+        ## Product id 113
+        200 - Ok, but no recommendations will be returned
+        
+        ## Product id 213
+        200 - Ok, but no reviews will be returned
+        
+        ## Non numerical product id
+        400 - A **Bad Request** error will be returned
+        
+        ## Product id 13
+        404 - A **Not Found** error will be returned
+        
+        ## Negative product ids
+        422 - An **Unprocessable Entity** error will be returned
+
+    create-composite-product:
+      summary: Creates a composite product
+      description: |
+        # Normal response
+        The composite product information posted to the API will be split up and stored as separate product-info, recommendation and review entities.
+        # Expected error responses
+        1. If a product with the same productId as specified in the posted information already exists,
+           an **422 - Unprocessable Entity** error with a "duplicate key" error message will be returned
+
+    delete-composite-product:
+      summary: Deletes a product composite
+      description: |
+        # Normal response
+        Entities for product information, recommendations and reviews related to the specified productId will be deleted.
+        The implementation of the delete method is idempotent, i.e. it can be called several times with the same response.
+        This means that a delete request of a non-existing product will return **200 Ok**.
+app:
+  product-service:
+    host: localhost
+    port: 7001
+  recommendation-service:
+    host: localhost
+    port: 7002
+  review-service:
+    host: localhost
+    port: 7003
+
+logging:
+  level:
+    root: INFO
+    se.magnus: DEBUG
+
+---
+
+spring.config.activate.on-profile: docker
+
+server.port: 8085
+
+app:
+  product-service:
+    host: product
+    port: 8080
+  recommendation-service:
+    host: recommendation
+    port: 8080
+  review-service:
+    host: review
+    port: 8080

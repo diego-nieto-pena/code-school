@@ -1,0 +1,13 @@
+se/magnus/microservices/core/review/persistence/ReviewEntity.java
+ se.magnus.microservices.core.review.persistence.ReviewEntity
+se/magnus/microservices/core/review/persistence/ReviewRepository.java
+ se.magnus.microservices.core.review.persistence.ReviewRepository
+se/magnus/microservices/core/review/ReviewServiceApplication.java
+ se.magnus.microservices.core.review.ReviewServiceApplication
+se/magnus/microservices/core/review/services/ReviewServiceImpl.java
+ se.magnus.microservices.core.review.services.ReviewServiceImpl
+se/magnus/microservices/core/review/services/MessageProcessorConfig.java
+ se.magnus.microservices.core.review.services.MessageProcessorConfig
+ se.magnus.microservices.core.review.services.MessageProcessorConfig$1
+se/magnus/microservices/core/review/services/ReviewMapper.java
+ se.magnus.microservices.core.review.services.ReviewMapper
